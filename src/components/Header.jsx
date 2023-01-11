@@ -12,7 +12,9 @@ import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import StarsIcon from '@mui/icons-material/Stars';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import DoneOutlineIcon from '@mui/icons-material/DoneOutline';
-
+import HouseIcon from '@mui/icons-material/House';
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import PersonIcon from '@mui/icons-material/Person';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -86,7 +88,33 @@ const Header = () => {
                   </Card>
                   
                     </Grid>
-                    
+                    <Grid item xs={6}>
+                        <Card style={{
+                            width: 400,
+                            backgroundColor: "black",
+                        }}>
+                            <CardActionArea>
+
+                                <CardContent>
+                                    <Typography style={{ fontSize: 14 }}
+                                        color="yellow" gutterBottom variant="h5" component="div">
+                                        50
+                                    </Typography>
+                                    <Typography style={{ fontSize: 14 }}
+                                        color="white" gutterBottom variant="h5" component="div">
+                                        Available  Balance
+                                    </Typography>
+                                    <Typography style={{ fontSize: 14 }}
+                                        color="white" gutterBottom variant="h5" component="div">
+                                        Kes
+                                    </Typography>
+
+                                </CardContent>
+                            </CardActionArea>
+                        </Card>
+
+                    </Grid>
+
                     
                     <Grid item xs={6}>
                         <Card style={{
@@ -203,6 +231,44 @@ const Header = () => {
                             </CardActionArea>
                         </Card>
                     </Grid>
+                    <Grid item xs={6}>
+                        <Card style={{
+                            width: 400,
+                            backgroundColor: "white",
+                        }}>
+                            <CardActionArea>
+                                <Grid container direction="row" alignItems="center">
+                                    <HouseIcon />
+                                    <Typography>Home</Typography>
+                                    <AccountBalanceWalletIcon />
+                                    <Typography>My Transactions</Typography>
+                                    <NotificationsIcon />
+                                    <Typography>Notifications</Typography>
+                                    < PersonIcon />
+                                    <Typography>My Account</Typography>
+                                   
+                                </Grid>
+
+                                <CardContent>
+                                    <Typography style={{ fontSize: 14 }}
+                                        color="yellow" gutterBottom variant="h5" component="div">
+                                        30
+                                    </Typography>
+                                    <Typography style={{ fontSize: 14 }}
+                                        color="white" gutterBottom variant="h5" component="div">
+                                        Hold Balance
+                                    </Typography>
+                                    <Typography style={{ fontSize: 14 }}
+                                        color="white" gutterBottom variant="h5" component="div">
+                                        Kes
+                                    </Typography>
+
+                                </CardContent>
+                            </CardActionArea>
+                        </Card>
+
+                    </Grid>
+
           </Grid>
             </React.Fragment>
             </div>
